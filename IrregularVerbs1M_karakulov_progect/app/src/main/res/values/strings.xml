@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">IrVerbs Lite</string>
+    <string name="test1_main_title">СОСТАВЬ ФОРМУ ГЛАГОЛА</string>
+    <string name="test2_main_title">ВЫБЕРИ ФОРМУ ГЛАГОЛА</string>
+    <string name="test3_main_title">НАПИШИ ФОРМУ ГЛАГОЛА</string>
+    <string name="test1_title">Составь форму глагола</string>
+    <string name="test2_title">Выбери форму глагола</string>
+    <string name="test3_title">Напиши форму глаголоа</string>
+    <string name="dict_main_title">СЛОВАРЬ</string>
+    <string name="right_answers">ПРАВИЛЬНЫХ ОТВЕТОВ</string>
+    <string name="mistakes">Ошибки:</string>
+    <string name="start">Начать</string>
+    <string name="next">Далее</string>
+    <string name="exit">ВЫХОД</string>
+    <string name="task1_3_hint">Введите правильную форму глагола</string>
+    <string name="test1_task">Напиши правильную форму глагола, которая должна быть на месте «?»</string>
+    <string name="test2_task">Выбери пропущенную форму глагола из предложенных вариантов, которая должна быть на месте «?»</string>
+    <string name="test3_task">Составь и запиши правильную форму глагола, которая должна быть на месте «?»</string>
+    <string name="switch_text">Если вкл., то в задании будут формы Infinitive и Past Simple. Если выкл., то в задании будут формы Infinitive, Past Simple и Past Participle.</string>
+    <string name="two_or_three">Две формы глагола</string>
+    <string name="toast">Введите хотя бы 2 символа!</string>
+</resources>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="400dp" />
+
+    <RelativeLayout
+        android:id="@+id/combinate"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/test1_style"
+        app:layout_constraintEnd_toStartOf="@+id/choice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/combinate_form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="@string/test1_main_title"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/combinate_task"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_above="@+id/combinate_form"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="0dp"
+            android:gravity="center"
+            app:srcCompat="@drawable/combinate_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/choice"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/test2_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/combinate"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/choice_form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="@string/test2_main_title"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/choice_task"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_above="@+id/choice_form"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="0dp"
+            android:gravity="center"
+            app:srcCompat="@drawable/choice_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/write"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/test3_style"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="@+id/combinate"
+        app:layout_constraintStart_toStartOf="@+id/combinate"
+        app:layout_constraintTop_toBottomOf="@+id/combinate">
+
+        <TextView
+            android:id="@+id/write_form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="@string/test3_main_title"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/cursor"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_above="@+id/write_form"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="0dp"
+            android:gravity="center"
+            app:srcCompat="@drawable/write_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dictionary"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/dict_style"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="@+id/choice"
+        app:layout_constraintStart_toStartOf="@+id/choice"
+        app:layout_constraintTop_toBottomOf="@+id/choice">
+
+        <TextView
+            android:id="@+id/dict"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="@string/dict_main_title"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/book"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_above="@+id/dict"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="0dp"
+            android:gravity="center"
+            app:srcCompat="@drawable/dicionary_icon" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/exit"
+        android:minWidth="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/test2_style"
+        android:text="@string/exit"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

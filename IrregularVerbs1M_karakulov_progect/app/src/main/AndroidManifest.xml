@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.irregularverbs1m_karakulov_progect">
+
+    <application
+        android:label="IrVerb Lite"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icon_irrv"
+        android:roundIcon="@drawable/icon_irrv"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.IrregularVerbs1M_karakulov_progect"
+        android:screenOrientation="portrait"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:label=" " android:name=".Test1"
+            android:parentActivityName = ".MainActivity">
+        </activity>
+        <activity android:label=" " android:name=".Test2"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity android:label=" " android:name=".Test3"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity android:label=" " android:name=".Test1_1"
+            android:parentActivityName = ".MainActivity">
+
+        </activity>
+        <activity android:label=" " android:name=".Test1_1f"
+            android:parentActivityName = ".MainActivity">
+
+        </activity>
+        <activity android:label=" " android:name=".Test2_2"
+            android:parentActivityName = ".MainActivity">
+
+        </activity>
+        <activity android:label=" " android:name=".Test2_2f"
+            android:parentActivityName = ".MainActivity">
+
+        </activity>
+        <activity android:label=" " android:name=".Test3_3"
+            android:parentActivityName = ".MainActivity">
+
+        </activity>
+        <activity android:label=" " android:name=".Test3_3f"
+            android:parentActivityName = ".MainActivity">
+
+        </activity>
+        <activity android:label=" " android:name=".Dictionary"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity android:label=" " android:name=".ShowResultTest3"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity android:label=" " android:name=".ShowResultTest2"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity android:label=" " android:name=".ShowResultTest1"
+            android:parentActivityName=".MainActivity">
+        </activity>
+    </application>
+</manifest>
